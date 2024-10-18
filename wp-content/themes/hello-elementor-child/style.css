@@ -1,0 +1,50 @@
+/*
+Theme Name:   Hello Elementor Child
+Template:     hello-elementor
+*/
+
+.btn--arrow svg {
+  height: 28.28px !important;
+  width: 28.28px !important;
+  position: absolute !important;
+  right: 20px !important;
+  top: 14px !important;
+}
+
+.btn--arrow svg {
+  overflow: hidden !important;
+}
+
+.btn--arrow:hover g {
+  /*animation: 1s boom ease infinite;*/
+  animation: 0.35s boom linear !important;
+}
+
+@keyframes boom {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(35px, -35px);
+  }
+
+  51% {
+    transform: translate(-35px, 35px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+html,body{
+	overflow-x:hidden !important;
+}
+
+@media (min-width: 1600px){
+	.wrapper{
+		padding-left:0px !important;
+		padding-right:0px !important;
+	}
+}
